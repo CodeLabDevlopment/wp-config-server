@@ -1,3 +1,11 @@
+server:
+  port: 8888
 spring:
   application:
     name: wp-config-server
+  cloud:
+    config:
+      server:
+        git:
+          default-label: main
+          uri: https://github.com/CodeLabDevlopment/workpay-configs
